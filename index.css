@@ -1,0 +1,133 @@
+.body {
+    background: rgb(100, 100, 100);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    
+    /* Fonts */
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Navigation */
+.nav_url {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    float: left;
+    color: white;
+    text-decoration: none;
+    margin: 16px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.nav_url:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    content: "";
+    transition: width 0.3s ease-out;
+    bottom: 0;
+}
+
+.nav_url:hover:after,
+.nav_url:focus:after {
+    width: 100%;
+}
+
+.nav_url p {
+    text-transform: uppercase;
+    transition: color .3s linear;
+}
+
+.nav_url:hover {
+    color: rgb(255, 0, 0);
+}
+
+.nav_img {
+    margin: 5px;
+}
+
+.foo {
+    display: flex;
+    background: rgb(11, 11, 11);
+}
+
+/* Info by author */
+.author__avatar {
+    display: -webkit-flex;
+    display: flex;
+    margin: 14px;
+    border-radius: 90px;
+}
+
+.author__div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.main__author {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.main {
+    display: flex;
+    display: -webkit-flex;
+    margin: 30px;
+}
+
+
+/* Sidebar */
+.border {
+    width: 300px;
+    background: #717171;
+    color: azure;
+    border-radius: 20px;
+}
+
+.list {
+    list-style-type: decimal;
+}
+
+.list li{
+    margin: 5px;
+    font-size: 20px;
+
+    transition: color .2s linear;
+}
+
+.list li:hover {
+    color: #ff0000;
+}
+
+.list h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    transition: color .2s linear;
+}
+
+.list h1:hover {
+    color: #ff0000;
+}
+
+.author {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.author_name {
+    font-size: 100px;
+    color: black;
+}
